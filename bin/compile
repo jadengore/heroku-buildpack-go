@@ -185,7 +185,7 @@ if test -e $build/Nut.toml
 then
     # For nut
     step "Running: nut install ${FLAGS[@]}"
-    nut install "${FLAGS[@]}"
+    nut install
 else
     step "Running: go get ${FLAGS[@]} ./..."
     go get "${FLAGS[@]}" ./...
