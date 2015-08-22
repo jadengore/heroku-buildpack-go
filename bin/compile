@@ -183,6 +183,7 @@ unset GIT_DIR # unset git dir or it will mess with goinstall
 cd $p
 if test -e $build/Nut.toml
 then
+    # For nut
     step "Running: nut install ${FLAGS[@]}"
     nut install "${FLAGS[@]}"
 else
