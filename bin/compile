@@ -186,6 +186,7 @@ then
     # For nut
     step "Running: nut install ${FLAGS[@]}"
     nut install
+    go build .
 else
     step "Running: go get ${FLAGS[@]} ./..."
     go get "${FLAGS[@]}" ./...
