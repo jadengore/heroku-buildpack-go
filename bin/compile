@@ -194,7 +194,7 @@ else
 fi
 
 mkdir src
-cp -R $build/.heroku/go/src/* src
+cp -R $build/.heroku/go/src/* ./src
 rm -rf $build/.heroku
 
 mkdir -p $build/.profile.d
