@@ -193,7 +193,9 @@ else
     go get "${FLAGS[@]}" ./...
 fi
 
-#rm -rf $build/.heroku
+mkdir src
+cp -R $build/.heroku/go/src/* src
+rm -rf $build/.heroku
 
 mkdir -p $build/.profile.d
 echo 'PATH=$PATH:$HOME/bin' > $build/.profile.d/go.sh
