@@ -181,6 +181,7 @@ fi
 
 unset GIT_DIR # unset git dir or it will mess with goinstall
 cd $p
+ls $p
 if test -e $build/Nut.toml
 then
     # For nut
@@ -192,7 +193,7 @@ else
     go get "${FLAGS[@]}" ./...
 fi
 
-rm -rf $build/.heroku
+#rm -rf $build/.heroku
 
 mkdir -p $build/.profile.d
 echo 'PATH=$PATH:$HOME/bin' > $build/.profile.d/go.sh
